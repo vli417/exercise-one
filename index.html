@@ -116,10 +116,18 @@
 
                     }
 
+                    function decreaseCount() {
+                        count = count-1;
+                        const countIndicator = document.querySelector('.count-indicator');
+                        return  (countIndicator.innerHTML= count);
+
+                     }
+
                 </script>
 
                 <p>Count: <span class="count-indicator">0</span></p>
                 <button onClick="increaseCount()">click to increase!</button>
+                <button onClick="decreaseCount()">click to decrease!</button>
             </div>
         </section>
     
